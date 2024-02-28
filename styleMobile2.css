@@ -1,0 +1,21 @@
+@media screen and (max-width: 700px) {
+    .main .telForm .content {
+        text-align: center;
+    }
+
+    .main .telForm .content form {
+        text-align: center;
+        align-items: center;
+    }
+
+    .main #header {
+        padding: 30px 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .main #header .logo svg {
+        width: 120px;
+    }
+}

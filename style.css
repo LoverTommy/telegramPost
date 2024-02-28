@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+  }
+
+.main .content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100vh;
+}
+
+.main .content .leftContent .title #logo{
+    width: 130px;
+    height: 50px;
+}
+
+.main .content .leftContent {
+    align-self: center;
+    overflow-y: auto;
+}
+
+.main .content .leftContent .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .leftContent .title h1 {
+    font-size: 60px;
+    font-family: 'Roboto';
+    color: rgba(0, 0, 0, 0.767);
+    letter-spacing: 1px;
+}
+
+
+/* rightContent */
+
+.main .content .rightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow-y: auto;
+}
+
+.main .content .rightContent .topTitle {
+    display: flex;
+    width: 350px;
+    height: 100px;
+    border-radius: 61px;
+    padding: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.281) 0px 2px 5px 0px;
+    gap: 10%;
+    -webkit-box-align: center;
+}
+
+.main .content .rightContent .topTitle #cab {
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.main .content .rightContent .topTitle h2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.main .content .rightContent .mainForm {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.384) 0px 2px 5px 0px;
+    width: 600px;
+    padding: 30px;
+    overflow: hidden;
+    height: 40px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes formOpen {
+    from {
+        height: 40px;
+        overflow-y: hidden;
+    }
+    
+    to {
+        height: 560px;
+        overflow-y: scroll;
+    }
+}
+
+@keyframes formClose {
+    from {
+        height: 560px;
+        overflow-y: scroll;
+    }
+
+    to {
+        height: 40px;
+        overflow-y: hidden;
+    }
+}
+
+.main .content .rightContent .mainForm .formOpen {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-bottom: 30px;
+    align-items: center;
+    border-bottom: 1px rgba(0, 0, 0, 0.144) solid;
+    gap: 5px;
+}
+
+.main .content .rightContent .mainForm .formOpen p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.616);
+    cursor: pointer;
+}
+
+.main .content .rightContent .mainForm .formInfo {
+    padding-top: 10px;
+}
+
+.main .content .rightContent .mainForm .formInfo h4 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 20px;
+}
+
+.main .content .rightContent .mainForm .formInfo p {
+    font-family: 'Roboto';
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.main .content .rightContent .mainForm .wordsLength {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.main .content .rightContent .mainForm .wordsLength span {
+    font-family: 'Roboto';
+    font-size: 14px;
+    padding: 5px 15px;
+    border: 2px rgba(0, 0, 0, 0.137) solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main .content .rightContent .mainForm .wordsLength span:first-child {
+    background-color: #5cb85c;
+    border: 2px #5cb85c solid;
+    color: white;
+}
+
+.main .content .rightContent .mainForm form p{
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.603);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.main .content .rightContent .mainForm form {
+    padding-left: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.main .content .rightContent .mainForm form > div {
+    display: flex;
+    gap: 30px;
+}
+
+.main .content .rightContent .mainForm form input {
+    font-family: 'Roboto';
+    font-size: 16px;
+    padding: 10px;
+    border: 1px rgba(0, 0, 0, 0.267) solid;
+    border-radius: 5px;
+    width: 130px;
+    height: 15px;
+    margin-top: -15px;
+}
+
+.main .content .rightContent .mainForm form button {
+    padding: 13px 40px;
+    background-color: #5cb85c;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    cursor: pointer;
+    width: max-content;
+}
